@@ -19,4 +19,4 @@ const userSchema = new Schema({
 
 userSchema.index({ email: 1 }, { unique: true }); //indexируем дополнительные поля тем, что имейл должен быть уникальным
 
-export default mongoose.model('User', userSchema) //const User = mongoose.model('User', userSchema) и потом сделать экспорт;
+export default mongoose.model('User', userSchema); //const User = mongoose.model('User', userSchema) и потом сделать экспорт;

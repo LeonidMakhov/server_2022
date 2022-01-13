@@ -1,6 +1,5 @@
 import User from './Model';
 export default function userDeleteById(req, res) {
-
   const userId = req.params.userId;
 
   User.deleteOne({ _id: userId })

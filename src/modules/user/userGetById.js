@@ -1,6 +1,5 @@
 import User from './Model';
 export default function userGetById(req, res) {
-
   const userId = req.params.userId;
 
   User.findById(userId)
